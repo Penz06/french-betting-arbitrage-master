@@ -49,7 +49,7 @@ for competition in config.competitions:
 	except:
 		log.log("Cannot crawl ps3838: " + traceback.format_exc())
 	log.log("-- Competition: {} --".format(competition))
-	for game in bookmakers['winamax']:
+	for game in bookmakers.get['winamax']:
 		games = {}
 		for bookmaker in bookmakers:
 			try:
